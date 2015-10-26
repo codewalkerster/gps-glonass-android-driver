@@ -16,8 +16,8 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH)/include
 #LOCAL_STATIC_LIBRARIES := libcutils libc
 LOCAL_LDLIBS := -L$(LOCAL_PATH)/libs -llog -lcutils
 LOCAL_STATIC_LIBRARIES := liblog libcutils
-LOCAL_MODULE := gps.default
-LOCAL_MODULE_FILENAME := gps.default
+LOCAL_MODULE := gps.$(TARGET_PRODUCT)
+LOCAL_MODULE_FILENAME := gps.$(TARGET_PRODUCT)
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := misc.c interface.c state.c minmea.c gps_status.c reader.c notifier.c device.c gps.c
 
